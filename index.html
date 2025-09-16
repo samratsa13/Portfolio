@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="s.css">
+
+</head>
+
+<body>
+    <script>
+        function toggleMenu() {
+    var links = document.getElementById("myLinks");
+    var overlay = document.getElementById("overlay");
+
+    if (!links.classList.contains("active")) {
+        links.classList.add("responsive", "active");
+        overlay.classList.add("active");
+    } else {
+        links.classList.remove("active");
+        overlay.classList.remove("active");
+        setTimeout(() => {
+            links.classList.remove("responsive");
+        }, 300); // wait for animation
+    }
+}
+
+// Close on overlay click
+document.getElementById("overlay").addEventListener("click", function () {
+    closeMenu();
+});
+
+// Close on nav link click
+var navLinks = document.querySelectorAll('#myLinks a');
+navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        closeMenu();
+    });
+});
+
+function closeMenu() {
+    var links = document.getElementById("myLinks");
+    var overlay = document.getElementById("overlay");
+
+    links.classList.remove("active");
+    overlay.classList.remove("active");
+
+    setTimeout(() => {
+        links.classList.remove("responsive");
+    }, 300);
+}
+
+    </script>
+<div id="overlay" class="overlay"></div>
+
+    <nav>
+        <img src="Logo white.png" alt="Logo">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="but" id="myLinks">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <h1>Hi, I'm <span>Samrat Adhikari</span></h1>
+        <i>
+            <p>"Web Developer & Graphics Designer | Turning clean code & creative vision into modern, user-friendly
+                digital experiences."</p>
+        </i>
+
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>I am Samrat Adhikari, a passionate Web Developer and Graphics Designer with expertise in creating modern,
+                responsive, and user-friendly digital solutions. With a strong background in both design and
+                development, I specialize in combining technical skills with creative vision to deliver projects that
+                are functional, visually appealing, and impactful. <br><br>
+                As a Web Developer, I have hands-on experience in
+                building websites using HTML, CSS, JavaScript, and PHP. I focus on crafting clean and efficient code,
+                ensuring websites are optimized for performance, accessibility, and responsiveness across all devices.
+                <br><br>
+                As a Graphics Designer, I excel in transforming ideas into compelling visual designs. From branding and
+                marketing materials to digital illustrations and layouts, my work emphasizes creativity, precision, and
+                alignment with client objectives. <br> <br> I believe in bridging the gap between design and
+                technology—delivering
+                digital experiences that not only look professional but also perform seamlessly. My professional goal is
+                to continuously enhance my skills, contribute to innovative projects, and grow as a versatile
+                professional in the digital field.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio to showcase my work and skills.</p>
+                </div>
+                <div class="project">
+                    <h3>Blog Platform</h3>
+                    <p>A simple and elegant blog platform built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project">
+                    <h3>Landing Page</h3>
+                    <p>Responsive landing page for a startup, featuring modern design elements.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: samrat101sa@gmail.com</p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/samratadhikari" target="_blank">Samrat Adhikari</a></p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Samrat Adhikari. All rights reserved.
+    </footer>
+</body>
+
+</html>
