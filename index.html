@@ -6,7 +6,7 @@
     <title>Samratadk - Software Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="s.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
 </head>
 <body>
@@ -19,6 +19,9 @@
                     <a href="#" class="nav-link">Personal</a>
                     <a href="#" class="nav-link">Contact</a>
                 </div>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div>
                 <div class="language-toggle">
                     <button class="lang-btn active" id="english-btn">English</button>
                     <button class="lang-btn" id="nepali-btn">नेपाली</button>
@@ -28,13 +31,13 @@
         
         <section class="hero">
             <div class="profile-image">
-                <img src="Logo text white.png" alt="Samratadk">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Samratadk" id="profile-img">
             </div>
             
             <div class="profile-content">
                 <p class="greeting" id="greeting">Hello I'm</p>
                 <h1 class="name">Samratadk</h1>
-                <p class="location" id="location">Bulgan</p>
+                <p class="location" id="location">Chitwan</p>
                 
                 <h2 class="title" id="title">Software Engineer</h2>
                 
@@ -80,6 +83,24 @@
     </div>
 
     <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+            
+            if (body.classList.contains('light-theme')) {
+                themeIcon.className = 'fas fa-moon';
+                // In a real implementation, you would change the logo image here
+                // document.getElementById('logo-img').src = 'logo-black.png';
+            } else {
+                themeIcon.className = 'fas fa-sun';
+                // document.getElementById('logo-img').src = 'logo-white.png';
+            }
+        });
+        
         // Language toggle functionality
         const englishBtn = document.getElementById('english-btn');
         const nepaliBtn = document.getElementById('nepali-btn');
@@ -100,7 +121,7 @@
         // English text
         const englishText = {
             greeting: "Hello I'm",
-            location: "Bulgan",
+            location: "Chitwan",
             title: "Software Engineer",
             description: "IT Specialist & <span class='highlight'>Full-Stack Developer</span> | Pragmatic, delivery-oriented professional with expertise in creating robust and scalable web applications.",
             cvBtn: "DOWNLOAD CV",
@@ -115,7 +136,7 @@
         // Nepali text
         const nepaliText = {
             greeting: "नमस्ते, म हुँ",
-            location: "बुलगन",
+            location: "चितवन",
             title: "सफ्टवेयर इन्जिनियर",
             description: "आईटी विशेषज्ञ र <span class='highlight'>फुल-स्ट्याक डेभलपर</span> | व्यवहारिक, रिजल्ट-केन्द्रित पेशेवर जसरी robust र scalable वेब अनुप्रयोगहरू बनाउनमा विशेषज्ञता छ।",
             cvBtn: "सीवी डाउनलोड गर्नुहोस्",
