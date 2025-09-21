@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samratadk - Software Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="s.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="s.css">
 
 </head>
 <body>
@@ -80,6 +80,64 @@
                 <div class="stat-label">Projects<br>Deployed</div>
             </div>
         </div>
+        
+        <!-- Education Section -->
+        <section class="education-section">
+            <h2 class="section-title" id="education-title">Education Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="education-degree" id="education-degree-1">Secondary School Certificate</h3>
+                        <div class="education-dates" id="education-dates-1">May 2008 - April 2020</div>
+                        <div class="education-location" id="education-location-1">
+                            <i class="fas fa-map-marker-alt"></i> SOS Hermann Gmeiner School, Chitwan
+                        </div>
+                        <p class="education-description" id="education-desc-1">
+                            Completed Secondary school with outstanding academic performance and participation in multiple science fairs and coding competitions.
+                        </p>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="education-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="education-degree" id="education-degree-2">High School Certificate</h3>
+                        <div class="education-dates" id="education-dates-2">July 2020 - June 2022</div>
+                        <div class="education-location" id="education-location-2">
+                            <i class="fas fa-map-marker-alt"></i> Orchid College, Chitwan
+                        </div>
+                        <p class="education-description" id="education-desc-2">
+                            Completed High school with a focus on Computer Science, gaining foundational knowledge in programming, algorithms, and IT concepts and technology.
+                        </p>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="education-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="education-degree" id="education-degree-3">Bachelor in Computer Application</h3>
+                        <div class="education-dates" id="education-dates-3">Aug 2022 - Present</div>
+                        <div class="education-location" id="education-location-3">
+                            <i class="fas fa-map-marker-alt"></i> Tribhuwan University, Nepal
+                        </div>
+                        <p class="education-description" id="education-desc-3">
+                            Specializing in web development, UI/UX design, and software engineering. Active member of the University Tech Robotics Club.
+                        </p>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script>
@@ -87,17 +145,31 @@
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
         const themeIcon = themeToggle.querySelector('i');
+        const profileImg = document.getElementById('profile-img');
+        
+        // Set initial image based on current theme
+        function setInitialTheme() {
+            if (body.classList.contains('light-theme')) {
+                profileImg.src = "Logo text white.png";
+            } else {
+                profileImg.src = "Logo text white.png";
+            }
+        }
+        
+        // Call on page load
+        setInitialTheme();
         
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('light-theme');
             
             if (body.classList.contains('light-theme')) {
                 themeIcon.className = 'fas fa-moon';
-                // In a real implementation, you would change the logo image here
-                // document.getElementById('logo-img').src = 'logo-black.png';
+                // Change to dark text logo for light theme
+                profileImg.src = "Logo text.png";
             } else {
                 themeIcon.className = 'fas fa-sun';
-                // document.getElementById('logo-img').src = 'logo-white.png';
+                // Change to white text logo for dark theme
+                profileImg.src = "Logo text.png";
             }
         });
         
@@ -113,6 +185,21 @@
         const cvBtn = document.getElementById('cv-btn');
         const contactBtn = document.getElementById('contact-btn');
         const navLinks = document.querySelectorAll('.nav-link');
+        const educationTitle = document.getElementById('education-title');
+        
+        // Education elements
+        const educationDegree1 = document.getElementById('education-degree-1');
+        const educationDegree2 = document.getElementById('education-degree-2');
+        const educationDegree3 = document.getElementById('education-degree-3');
+        const educationDates1 = document.getElementById('education-dates-1');
+        const educationDates2 = document.getElementById('education-dates-2');
+        const educationDates3 = document.getElementById('education-dates-3');
+        const educationLocation1 = document.getElementById('education-location-1');
+        const educationLocation2 = document.getElementById('education-location-2');
+        const educationLocation3 = document.getElementById('education-location-3');
+        const educationDesc1 = document.getElementById('education-desc-1');
+        const educationDesc2 = document.getElementById('education-desc-2');
+        const educationDesc3 = document.getElementById('education-desc-3');
         
         // Stats elements
         const statNumbers = document.querySelectorAll('.stat-number');
@@ -127,6 +214,21 @@
             cvBtn: "DOWNLOAD CV",
             contactBtn: "CONTACT ME",
             nav: ["Professional", "Personal", "Contact"],
+            educationTitle: "Education Journey",
+            education: {
+                degree1: "Secondary School Certificate",
+                dates1: "May 2008 - April 2020",
+                location1: "SOS Hermann Gmeiner School Bharatpur, Chitwan",
+                desc1: "Completed Secondary school with outstanding academic performance and participation in multiple science fairs and coding competitions.",
+                degree2: "High School Certificate",
+                dates2: "July 2020 - June 2022",
+                location2: "Orchid College, Chitwan",
+                desc2: "Completed High school with a focus on Computer Science, gaining foundational knowledge in programming, algorithms, and IT concepts and technology.",
+                degree3: "Bachelor in Computer Application",
+                dates3: "Aug 2022 - Present",
+                location3: "Tribhuwan University, Nepal",
+                desc3: "Specializing in web development, UI/UX design, and software engineering. Active member of the University Tech Robotics Club."
+            },
             stats: {
                 numbers: ["2", "10", "4"],
                 labels: ["Years of<br>experience", "Projects worked<br>on", "Projects<br>Deployed"]
@@ -142,6 +244,21 @@
             cvBtn: "सीवी डाउनलोड गर्नुहोस्",
             contactBtn: "सम्पर्क गर्नुहोस्",
             nav: ["व्यावसायिक", "व्यक्तिगत", "सम्पर्क"],
+            educationTitle: "शिक्षा यात्रा",
+            education: {
+                degree1: "माध्यमिक विद्यालय प्रमाणपत्र",
+                dates1: "मे २००८ - अप्रिल २०२०",
+                location1: "SOS हर्मन माइनर विद्यालय भरतपुर, चितवन",
+                desc1: "उत्कृष्ट शैक्षिक प्रदर्शन र विभिन्न विज्ञान मेलाहरू र कोडिङ प्रतियोगिताहरूमा सहभागितासहित माध्यमिक विद्यालय पूरा गरे",
+                degree2: "उच्च विद्यालय प्रमाणपत्र",
+                dates2: "जुलाई २०२० - जुन २०२२",
+                location2: "अर्किड कलेज, चितवन",
+                desc2: "कम्प्युटर विज्ञानमा केन्द्रित उच्च विद्यालय पूरा गरे, प्रोग्रामिङ, एल्गोरिदम, र आईटी अवधारणाहरू र प्रविधिमा आधारभूत ज्ञान प्राप्त गरे।",
+                degree3: "कम्प्युटर अनुप्रयोगमा स्नातक",
+                dates3: "अगस्ट २०२२ - वर्तमान",
+                location3: "त्रिभुवन विश्वविद्यालय, नेपाल",
+                desc3: "वेब विकास, UI/UX डिजाइन, र सफ्टवेयर इन्जिनियरिङमा विशेषज्ञता। विश्वविद्यालय टेक रोबोटिक्स क्लबको सक्रिय सदस्य।"
+            },
             stats: {
                 numbers: ["२", "१०", "४"],
                 labels: ["वर्षको<br>अनुभव", "परियोजनाहरूमा<br>काम गरियो", "परियोजनाहरू<br>तैनाथ गरियो"]
@@ -164,6 +281,23 @@
             description.innerHTML = englishText.description;
             cvBtn.innerHTML = `<i class="fas fa-download"></i> ${englishText.cvBtn}`;
             contactBtn.innerHTML = `<i class="fas fa-envelope"></i> ${englishText.contactBtn}`;
+            educationTitle.textContent = englishText.educationTitle;
+            
+            // Update education section
+            educationDegree1.textContent = englishText.education.degree1;
+            educationDates1.textContent = englishText.education.dates1;
+            educationLocation1.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${englishText.education.location1}`;
+            educationDesc1.textContent = englishText.education.desc1;
+            
+            educationDegree2.textContent = englishText.education.degree2;
+            educationDates2.textContent = englishText.education.dates2;
+            educationLocation2.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${englishText.education.location2}`;
+            educationDesc2.textContent = englishText.education.desc2;
+            
+            educationDegree3.textContent = englishText.education.degree3;
+            educationDates3.textContent = englishText.education.dates3;
+            educationLocation3.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${englishText.education.location3}`;
+            educationDesc3.textContent = englishText.education.desc3;
             
             navLinks.forEach((link, index) => {
                 link.textContent = englishText.nav[index];
@@ -188,6 +322,23 @@
             description.innerHTML = nepaliText.description;
             cvBtn.innerHTML = `<i class="fas fa-download"></i> ${nepaliText.cvBtn}`;
             contactBtn.innerHTML = `<i class="fas fa-envelope"></i> ${nepaliText.contactBtn}`;
+            educationTitle.textContent = nepaliText.educationTitle;
+            
+            // Update education section
+            educationDegree1.textContent = nepaliText.education.degree1;
+            educationDates1.textContent = nepaliText.education.dates1;
+            educationLocation1.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${nepaliText.education.location1}`;
+            educationDesc1.textContent = nepaliText.education.desc1;
+            
+            educationDegree2.textContent = nepaliText.education.degree2;
+            educationDates2.textContent = nepaliText.education.dates2;
+            educationLocation2.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${nepaliText.education.location2}`;
+            educationDesc2.textContent = nepaliText.education.desc2;
+            
+            educationDegree3.textContent = nepaliText.education.degree3;
+            educationDates3.textContent = nepaliText.education.dates3;
+            educationLocation3.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${nepaliText.education.location3}`;
+            educationDesc3.textContent = nepaliText.education.desc3;
             
             navLinks.forEach((link, index) => {
                 link.textContent = nepaliText.nav[index];
@@ -205,6 +356,37 @@
         // Event listeners for language buttons
         englishBtn.addEventListener('click', setEnglish);
         nepaliBtn.addEventListener('click', setNepali);
+        
+        // Animation for timeline items when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            timelineItems.forEach(item => {
+                item.style.animationPlayState = 'paused';
+                observer.observe(item);
+            });
+            
+            // Add hover effect with slight tilt
+            const contents = document.querySelectorAll('.timeline-content');
+            contents.forEach(content => {
+                content.addEventListener('mouseenter', () => {
+                    content.style.transform = 'translateY(-5px) rotate(1deg)';
+                });
+                
+                content.addEventListener('mouseleave', () => {
+                    content.style.transform = 'translateY(0) rotate(0)';
+                });
+            });
+        });
     </script>
 </body>
 </html>
