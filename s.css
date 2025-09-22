@@ -532,6 +532,17 @@
             left: 25px;
         }
 
+        .timeline-item:nth-child(2) .education-icon {
+    top: 15px;
+    right: 15px;
+}
+
+
+.timeline-item:nth-child(even).timeline-item:nth-child(2) .education-icon {
+    left: auto;
+    right: 15px;
+}
+
         /* Animations */
         @keyframes fadeIn {
             from {
@@ -612,6 +623,15 @@
             .timeline-item:nth-child(even) .education-icon {
                 left: 25px;
             }
+             .timeline-item:nth-child(2) .education-icon {
+        top: 20px;
+        right: 20px;
+        left: auto;
+    }
+     .timeline-item:nth-child(even).timeline-item:nth-child(2) .education-icon {
+        left: auto;
+        right: 20px;
+    }
         }
         
         @media (max-width: 768px) {
@@ -663,6 +683,11 @@
             .education-degree {
                 font-size: 1.3rem;
             }
+             .timeline-item:nth-child(2) .education-icon {
+        top: 15px;
+        right: 15px;
+    }
+
         }
         
         @media (max-width: 480px) {
@@ -721,4 +746,11 @@
             .education-dates, .education-location {
                 font-size: 0.9rem;
             }
+              .timeline-item:nth-child(2) .education-icon {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
         }
