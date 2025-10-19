@@ -8,8 +8,8 @@
         }
         
         body {
-            background: linear-gradient(135deg, #0a1e12 0%, #15271d 100%);
-            color: #fff;
+            background: #000000;
+            color: #ffffff;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -18,8 +18,8 @@
         }
         
         body.light-theme {
-            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-            color: #333;
+            background: #ffffff;
+            color: #000000;
         }
         
         .container {
@@ -31,18 +31,20 @@
         }
         
         .navbar {
-            background: rgba(15, 35, 25, 0.9);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 30px;
             border-radius: 12px;
+            border: 1px solid rgba(46, 204, 113, 0.2);
         }
         
         body.light-theme .navbar {
-            background: rgba(240, 240, 240, 0.95);
+            background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
         }
         
         .logo {
@@ -67,7 +69,7 @@
         }
         
         .nav-links a {
-            color: #ddd;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 500;
             font-size: 1.1rem;
@@ -77,7 +79,7 @@
         }
         
         body.light-theme .nav-links a {
-            color: #555;
+            color: #000000;
         }
         
         .nav-links a:hover {
@@ -106,35 +108,35 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
             cursor: pointer;
             transition: all 0.3s ease;
         }
         
         body.light-theme .theme-toggle {
-            background: rgba(0, 0, 0, 0.1);
-            color: #333;
+            background: rgba(46, 204, 113, 0.1);
+            color: #27ae60;
         }
         
         .theme-toggle:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(46, 204, 113, 0.4);
             transform: rotate(15deg);
         }
         
         body.light-theme .theme-toggle:hover {
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(46, 204, 113, 0.3);
         }
         
         .language-toggle {
             display: flex;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(46, 204, 113, 0.1);
             border-radius: 20px;
             padding: 5px;
         }
         
         body.light-theme .language-toggle {
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(46, 204, 113, 0.1);
         }
         
         .lang-btn {
@@ -142,14 +144,14 @@
             border: none;
             border-radius: 15px;
             background: transparent;
-            color: #ccc;
+            color: #ffffff;
             cursor: pointer;
             font-weight: 500;
             transition: all 0.3s ease;
         }
         
         body.light-theme .lang-btn {
-            color: #666;
+            color: #000000;
         }
         
         .lang-btn.active {
@@ -161,15 +163,17 @@
             display: flex;
             gap: 40px;
             align-items: center;
-            background: rgba(20, 40, 30, 0.7);
+            background: rgba(0, 0, 0, 0.5);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(46, 204, 113, 0.2);
         }
         
         body.light-theme .hero {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.8);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
         }
         
         .profile-image {
@@ -213,12 +217,12 @@
         
         .location {
             font-size: 1.5rem;
-            color: #ccc;
+            color: #ffffff;
             margin-bottom: 10px;
         }
         
         body.light-theme .location {
-            color: #666;
+            color: #000000;
         }
         
         .title {
@@ -230,12 +234,12 @@
         .description {
             font-size: 1.1rem;
             line-height: 1.6;
-            color: #ccc;
+            color: #ffffff;
             max-width: 600px;
         }
         
         body.light-theme .description {
-            color: #555;
+            color: #000000;
         }
         
         .highlight {
@@ -293,15 +297,15 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            background: rgba(46, 204, 113, 0.1);
+            color: #2ecc71;
             font-size: 1.5rem;
             transition: all 0.3s ease;
         }
         
         body.light-theme .social-icons a {
-            background: rgba(0, 0, 0, 0.1);
-            color: #333;
+            background: rgba(46, 204, 113, 0.1);
+            color: #27ae60;
         }
         
         .social-icons a:hover {
@@ -316,15 +320,17 @@
             justify-content: space-around;
             margin-top: 40px;
             padding: 40px;
-            background: rgba(20, 40, 30, 0.7);
+            background: rgba(0, 0, 0, 0.5);
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease;
+            border: 1px solid rgba(46, 204, 113, 0.2);
         }
         
         body.light-theme .stats-section {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.8);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
         }
         
         .stat-item {
@@ -361,26 +367,28 @@
         
         .stat-label {
             font-size: 1.2rem;
-            color: #ccc;
+            color: #ffffff;
             font-weight: 500;
         }
         
         body.light-theme .stat-label {
-            color: #666;
+            color: #000000;
         }
         
         /* Education Section Styles */
         .education-section {
-            background: rgba(20, 40, 30, 0.7);
+            background: rgba(0, 0, 0, 0.5);
             border-radius: 20px;
             padding: 40px;
             margin-top: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(46, 204, 113, 0.2);
         }
 
         body.light-theme .education-section {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.8);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
         }
 
         .section-title {
@@ -428,11 +436,11 @@
         }
 
         .timeline-content {
-            background: rgba(20, 40, 30, 0.9);
+            background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             width: 85%;
             position: relative;
             transition: all 0.3s ease;
@@ -485,7 +493,7 @@
         }
 
         .education-location {
-            color: #ddd;
+            color: #ffffff;
             font-size: 1.1rem;
             margin-top: 10px;
             display: flex;
@@ -493,7 +501,7 @@
         }
 
         body.light-theme .education-location {
-            color: #555;
+            color: #000000;
         }
 
         .education-location i {
@@ -502,14 +510,14 @@
         }
 
         .education-description {
-            color: #ccc;
+            color: #ffffff;
             margin-top: 15px;
             line-height: 1.5;
             font-size: 1rem;
         }
 
         body.light-theme .education-description {
-            color: #666;
+            color: #000000;
         }
 
         .education-icon {
