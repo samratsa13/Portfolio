@@ -10,21 +10,21 @@
 
 </head>
 <body>
+    <!-- Particle System -->
+    <div id="particles-container"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
     <div class="container">
         <nav class="navbar">
             <div class="logo">Samratadk</div>
             <div class="nav-content">
                 <div class="nav-links">
-                    <a href="#" class="nav-link">Professional</a>
+                    <a href="index.html" class="nav-link">Professional</a>
                     <a href="#" class="nav-link">Personal</a>
                     <a href="#" class="nav-link">Contact</a>
-                </div>
-                <div class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <div class="language-toggle">
-                    <button class="lang-btn active" id="english-btn">English</button>
-                    <button class="lang-btn" id="nepali-btn">नेपाली</button>
                 </div>
             </div>
         </nav>
@@ -57,10 +57,10 @@
                 </div>
                 
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/samratadhikari/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/samratsa13"><i class="fab fa-github"></i></a>
+                    <a href="https://www.behance.net/samratadhikari5"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.instagram.com/sam_visualsofficial/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
@@ -138,224 +138,439 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="project-tabs">
+                <button class="tab-btn active" data-tab="web-dev">Web Development</button>
+                <button class="tab-btn" data-tab="graphics">Graphics Design</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Web Development Projects -->
+                <div class="tab-panel active" id="web-dev">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-Commerce Website</h3>
+                                <p class="project-description">Full-stack e-commerce platform with React, Node.js, and MongoDB</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Task Management App</h3>
+                                <p class="project-description">Collaborative task management application with real-time updates</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">Socket.io</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Portfolio Website</h3>
+                                <p class="project-description">Responsive portfolio website with modern animations</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Graphics Design Projects -->
+                <div class="tab-panel" id="graphics">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Brand Identity Design</h3>
+                                <p class="project-description">Complete brand identity package including logo, business cards, and letterhead</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Adobe Illustrator</span>
+                                    <span class="tech-tag">Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">UI/UX Design</h3>
+                                <p class="project-description">Mobile app interface design with user experience focus</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Figma</span>
+                                    <span class="tech-tag">Adobe XD</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Poster Design</h3>
+                                <p class="project-description">Event poster design with creative typography and layout</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Photoshop</span>
+                                    <span class="tech-tag">Illustrator</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Samratadk</h3>
+                    <p class="footer-description">IT Specialist & Web Developer passionate about creating innovative digital solutions.</p>
+                    <div class="footer-social">
+                        <a href="#" class="https://www.linkedin.com/in/samratadhikari/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="https://github.com/samratsa13"><i class="fab fa-github"></i></a>
+                        <a href="#" class="https://www.behance.net/samratadhikari5"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="https://www.instagram.com/sam_visualsofficial/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Projects</a></li>
+                        <li><a href="#" class="footer-link">Skills</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Web Development</a></li>
+                        <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="#" class="footer-link">Brand Design</a></li>
+                        <li><a href="#" class="footer-link">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> samratadk@email.com</p>
+                        <p><i class="fas fa-phone"></i> +977 98XXXXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chitwan, Nepal</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Samratadk. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+            </div>
+        </footer>
     </div>
 
     <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const themeIcon = themeToggle.querySelector('i');
-        const profileImg = document.getElementById('profile-img');
-        
-        // Set initial image based on current theme
-        function setInitialTheme() {
-            if (body.classList.contains('light-theme')) {
-                profileImg.src = "Logo text white.png";
-            } else {
-                profileImg.src = "Logo text white.png";
+        // Particle System
+        function createParticles() {
+            const container = document.getElementById('particles-container');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (8 + Math.random() * 4) + 's';
+                container.appendChild(particle);
             }
         }
         
-        // Call on page load
-        setInitialTheme();
-        
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('light-theme');
+        // Custom Cursor
+        function initCustomCursor() {
+            const cursor = document.querySelector('.cursor');
+            const cursorFollower = document.querySelector('.cursor-follower');
             
-            if (body.classList.contains('light-theme')) {
-                themeIcon.className = 'fas fa-moon';
-                // Change to dark text logo for light theme
-                profileImg.src = "Logo text.png";
-            } else {
-                themeIcon.className = 'fas fa-sun';
-                // Change to white text logo for dark theme
-                profileImg.src = "Logo text white.png";
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                setTimeout(() => {
+                    cursorFollower.style.left = e.clientX + 'px';
+                    cursorFollower.style.top = e.clientY + 'px';
+                }, 100);
+            });
+            
+            // Add hover effects
+            const hoverElements = document.querySelectorAll('a, button, .btn, .nav-link, .theme-toggle, .lang-btn, .social-icons a, .stat-item, .timeline-content');
+            
+            hoverElements.forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    cursor.classList.add('hover');
+                    cursorFollower.classList.add('hover');
+                });
+                
+                element.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hover');
+                    cursorFollower.classList.remove('hover');
+                });
+            });
+        }
+        
+        // Scroll-triggered animations
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for animation
+            const animatedElements = document.querySelectorAll('.stat-item, .timeline-item, .timeline-content');
+            animatedElements.forEach(el => observer.observe(el));
+        }
+        
+        // Dynamic typing effect for name
+        function initTypingEffect() {
+            const nameElement = document.querySelector('.name');
+            const originalText = nameElement.textContent;
+            nameElement.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    nameElement.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            };
+            
+            setTimeout(typeWriter, 1000);
+        }
+        
+        // Parallax effect for background elements
+        function initParallaxEffect() {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('.hero::before, .stats-section::before, .education-section::before');
+                
+                parallaxElements.forEach(element => {
+                    const speed = 0.5;
+                    element.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+        }
+        
+        // Glitch effect for logo
+        function initGlitchEffect() {
+            const logo = document.querySelector('.logo');
+            const glitchText = ['Samratadk', 'S4mrat4dk', 'Samrat@dk', 'Samratadk'];
+            let currentIndex = 0;
+            
+            setInterval(() => {
+                if (Math.random() < 0.1) { // 10% chance
+                    logo.textContent = glitchText[currentIndex];
+                    currentIndex = (currentIndex + 1) % glitchText.length;
+                    
+                    setTimeout(() => {
+                        logo.textContent = 'Samratadk';
+                    }, 100);
+                }
+            }, 2000);
+        }
+        
+        // Terminal-style typing effect for description
+        function initTerminalTyping() {
+            const description = document.querySelector('.description');
+            const originalText = description.innerHTML;
+            description.innerHTML = '';
+            
+            let i = 0;
+            const terminalType = () => {
+                if (i < originalText.length) {
+                    description.innerHTML += originalText.charAt(i);
+                    i++;
+                    setTimeout(terminalType, 30);
+                }
+            };
+            
+            setTimeout(terminalType, 2000);
+        }
+        
+        // Code rain effect (like Matrix but with code snippets)
+        function createCodeRain() {
+            const container = document.getElementById('particles-container');
+            const codeSnippets = ['<div>', '</div>', 'function()', 'const', 'let', 'var', 'if()', 'for()', '{}', '[]', '=>', '&&', '||', '===', '!=='];
+            
+            for (let i = 0; i < 30; i++) {
+                const codeElement = document.createElement('div');
+                codeElement.className = 'code-particle';
+                codeElement.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+                codeElement.style.left = Math.random() * 100 + '%';
+                codeElement.style.animationDelay = Math.random() * 10 + 's';
+                codeElement.style.animationDuration = (15 + Math.random() * 10) + 's';
+                container.appendChild(codeElement);
             }
+        }
+        
+        // Binary counter animation for stats
+        function animateBinaryCounter(element, targetValue) {
+            let currentValue = 0;
+            const increment = targetValue / 100;
+            const timer = setInterval(() => {
+                currentValue += increment;
+                if (currentValue >= targetValue) {
+                    currentValue = targetValue;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(currentValue);
+            }, 20);
+        }
+        
+        // Initialize binary counters when stats come into view
+        function initBinaryCounters() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const targetValue = parseInt(entry.target.textContent);
+                        animateBinaryCounter(entry.target, targetValue);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            statNumbers.forEach(stat => observer.observe(stat));
+        }
+        
+        // Glitch effect for logo (more IT-themed)
+        function initITGlitchEffect() {
+            const logo = document.querySelector('.logo');
+            const glitchText = ['Samratadk', 'S4mrat4dk', 'Samrat@dk', 'Samratadk', 'S4MR4T4DK', 'Samratadk'];
+            let currentIndex = 0;
+            
+            setInterval(() => {
+                if (Math.random() < 0.15) { // 15% chance
+                    logo.textContent = glitchText[currentIndex];
+                    logo.classList.add('glitch');
+                    currentIndex = (currentIndex + 1) % glitchText.length;
+                    
+                    setTimeout(() => {
+                        logo.textContent = 'Samratadk';
+                        logo.classList.remove('glitch');
+                    }, 150);
+                }
+            }, 3000);
+        }
+        
+        // Tab functionality for projects section
+        function initProjectTabs() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons and panels
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanels.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Show corresponding panel
+                    const targetTab = btn.getAttribute('data-tab');
+                    const targetPanel = document.getElementById(targetTab);
+                    if (targetPanel) {
+                        targetPanel.classList.add('active');
+                    }
+                });
+            });
+        }
+        
+        // Initialize all effects
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            initCustomCursor();
+            initScrollAnimations();
+            initTypingEffect();
+            initParallaxEffect();
+            initITGlitchEffect();
+            initTerminalTyping();
+            createCodeRain();
+            initBinaryCounters();
+            initProjectTabs();
         });
         
-        // Language toggle functionality
-        const englishBtn = document.getElementById('english-btn');
-        const nepaliBtn = document.getElementById('nepali-btn');
-        
-        // Text elements to be translated
-        const greeting = document.getElementById('greeting');
-        const locationText = document.getElementById('location');
-        const title = document.getElementById('title');
-        const description = document.getElementById('description');
-        const cvBtn = document.getElementById('cv-btn');
-        const contactBtn = document.getElementById('contact-btn');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const educationTitle = document.getElementById('education-title');
-        
-        // Education elements
-        const educationDegree1 = document.getElementById('education-degree-1');
-        const educationDegree2 = document.getElementById('education-degree-2');
-        const educationDegree3 = document.getElementById('education-degree-3');
-        const educationDates1 = document.getElementById('education-dates-1');
-        const educationDates2 = document.getElementById('education-dates-2');
-        const educationDates3 = document.getElementById('education-dates-3');
-        const educationLocation1 = document.getElementById('education-location-1');
-        const educationLocation2 = document.getElementById('education-location-2');
-        const educationLocation3 = document.getElementById('education-location-3');
-        const educationDesc1 = document.getElementById('education-desc-1');
-        const educationDesc2 = document.getElementById('education-desc-2');
-        const educationDesc3 = document.getElementById('education-desc-3');
-        
-        // Stats elements
-        const statNumbers = document.querySelectorAll('.stat-number');
-        const statLabels = document.querySelectorAll('.stat-label');
-        
-        // English text
-        const englishText = {
-            greeting: "Hello I'm",
-            location: "Chitwan",
-            title: "Graphic Designer & Web Developer",
-            description: "IT Specialist & <span class='highlight'>Web Developer</span> | Pragmatic, delivery-oriented professional with expertise in creating robust and scalable web-based applications.",
-            cvBtn: "DOWNLOAD CV",
-            contactBtn: "CONTACT ME",
-            nav: ["Professional", "Personal", "Contact"],
-            educationTitle: "Education Journey",
-            education: {
-                degree1: "Secondary School Certificate",
-                dates1: "May 2008 - April 2020",
-                location1: "SOS Hermann Gmeiner School Bharatpur, Chitwan",
-                desc1: "Completed Secondary school with outstanding academic performance and participation in multiple science fairs and coding competitions.",
-                degree2: "High School Certificate",
-                dates2: "July 2020 - June 2022",
-                location2: "Orchid College, Chitwan",
-                desc2: "Completed High school with a focus on Computer Science, gaining foundational knowledge in programming, algorithms, and IT concepts and technology.",
-                degree3: "Bachelor in Computer Application",
-                dates3: "Aug 2022 - Present",
-                location3: "Tribhuwan University, Nepal",
-                desc3: "Specializing in web development, UI/UX design, and software engineering. Active member of the University Tech Robotics Club."
-            },
-            stats: {
-                numbers: ["2", "10", "4"],
-                labels: ["Years of<br>experience", "Projects worked<br>on", "Projects<br>Deployed"]
-            }
-        };
-        
-        // Nepali text
-        const nepaliText = {
-            greeting: "नमस्ते, म हुँ",
-            location: "चितवन",
-            title: "ग्राफिक डिजाइनर र वेब डेभलपर",
-            description: "आईटी विशेषज्ञ र <span class='highlight'> वेब डेभलपर</span> | व्यवहारिक, रिजल्ट-केन्द्रित पेशेवर जसरी robust र scalable वेब अनुप्रयोगहरू बनाउनमा विशेषज्ञता छ।",
-            cvBtn: "सीवी डाउनलोड गर्नुहोस्",
-            contactBtn: "सम्पर्क गर्नुहोस्",
-            nav: ["व्यावसायिक", "व्यक्तिगत", "सम्पर्क"],
-            educationTitle: "शिक्षा यात्रा",
-            education: {
-                degree1: "माध्यमिक विद्यालय प्रमाणपत्र",
-                dates1: "मे २००८ - अप्रिल २०२०",
-                location1: "SOS हर्मन माइनर विद्यालय भरतपुर, चितवन",
-                desc1: "उत्कृष्ट शैक्षिक प्रदर्शन र विभिन्न विज्ञान मेलाहरू र कोडिङ प्रतियोगिताहरूमा सहभागितासहित माध्यमिक विद्यालय पूरा गरे",
-                degree2: "उच्च विद्यालय प्रमाणपत्र",
-                dates2: "जुलाई २०२० - जुन २०२२",
-                location2: "अर्किड कलेज, चितवन",
-                desc2: "कम्प्युटर विज्ञानमा केन्द्रित उच्च विद्यालय पूरा गरे, प्रोग्रामिङ, एल्गोरिदम, र आईटी अवधारणाहरू र प्रविधिमा आधारभूत ज्ञान प्राप्त गरे।",
-                degree3: "कम्प्युटर अनुप्रयोगमा स्नातक",
-                dates3: "अगस्ट २०२२ - वर्तमान",
-                location3: "त्रिभुवन विश्वविद्यालय, नेपाल",
-                desc3: "वेब विकास, UI/UX डिजाइन, र सफ्टवेयर इन्जिनियरिङमा विशेषज्ञता। विश्वविद्यालय टेक रोबोटिक्स क्लबको सक्रिय सदस्य।"
-            },
-            stats: {
-                numbers: ["२", "१०", "४"],
-                labels: ["वर्षको<br>अनुभव", "परियोजनाहरूमा<br>काम गरियो", "परियोजनाहरू<br>तैनाथ गरियो"]
-            }
-        };
-        
-        // Set active language button
-        function setActiveLang(activeBtn, inactiveBtn) {
-            activeBtn.classList.add('active');
-            inactiveBtn.classList.remove('active');
-        }
-        
-        // Change language to English
-        function setEnglish() {
-            setActiveLang(englishBtn, nepaliBtn);
-            
-            greeting.textContent = englishText.greeting;
-            locationText.textContent = englishText.location;
-            title.textContent = englishText.title;
-            description.innerHTML = englishText.description;
-            cvBtn.innerHTML = `<i class="fas fa-download"></i> ${englishText.cvBtn}`;
-            contactBtn.innerHTML = `<i class="fas fa-envelope"></i> ${englishText.contactBtn}`;
-            educationTitle.textContent = englishText.educationTitle;
-            
-            // Update education section
-            educationDegree1.textContent = englishText.education.degree1;
-            educationDates1.textContent = englishText.education.dates1;
-            educationLocation1.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${englishText.education.location1}`;
-            educationDesc1.textContent = englishText.education.desc1;
-            
-            educationDegree2.textContent = englishText.education.degree2;
-            educationDates2.textContent = englishText.education.dates2;
-            educationLocation2.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${englishText.education.location2}`;
-            educationDesc2.textContent = englishText.education.desc2;
-            
-            educationDegree3.textContent = englishText.education.degree3;
-            educationDates3.textContent = englishText.education.dates3;
-            educationLocation3.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${englishText.education.location3}`;
-            educationDesc3.textContent = englishText.education.desc3;
-            
-            navLinks.forEach((link, index) => {
-                link.textContent = englishText.nav[index];
-            });
-            
-            statNumbers.forEach((number, index) => {
-                number.textContent = englishText.stats.numbers[index];
-            });
-            
-            statLabels.forEach((label, index) => {
-                label.innerHTML = englishText.stats.labels[index];
-            });
-        }
-        
-        // Change language to Nepali
-        function setNepali() {
-            setActiveLang(nepaliBtn, englishBtn);
-            
-            greeting.textContent = nepaliText.greeting;
-            locationText.textContent = nepaliText.location;
-            title.textContent = nepaliText.title;
-            description.innerHTML = nepaliText.description;
-            cvBtn.innerHTML = `<i class="fas fa-download"></i> ${nepaliText.cvBtn}`;
-            contactBtn.innerHTML = `<i class="fas fa-envelope"></i> ${nepaliText.contactBtn}`;
-            educationTitle.textContent = nepaliText.educationTitle;
-            
-            // Update education section
-            educationDegree1.textContent = nepaliText.education.degree1;
-            educationDates1.textContent = nepaliText.education.dates1;
-            educationLocation1.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${nepaliText.education.location1}`;
-            educationDesc1.textContent = nepaliText.education.desc1;
-            
-            educationDegree2.textContent = nepaliText.education.degree2;
-            educationDates2.textContent = nepaliText.education.dates2;
-            educationLocation2.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${nepaliText.education.location2}`;
-            educationDesc2.textContent = nepaliText.education.desc2;
-            
-            educationDegree3.textContent = nepaliText.education.degree3;
-            educationDates3.textContent = nepaliText.education.dates3;
-            educationLocation3.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${nepaliText.education.location3}`;
-            educationDesc3.textContent = nepaliText.education.desc3;
-            
-            navLinks.forEach((link, index) => {
-                link.textContent = nepaliText.nav[index];
-            });
-            
-            statNumbers.forEach((number, index) => {
-                number.textContent = nepaliText.stats.numbers[index];
-            });
-            
-            statLabels.forEach((label, index) => {
-                label.innerHTML = nepaliText.stats.labels[index];
-            });
-        }
-        
-        // Event listeners for language buttons
-        englishBtn.addEventListener('click', setEnglish);
-        nepaliBtn.addEventListener('click', setNepali);
+        // Set initial image
+        const profileImg = document.getElementById('profile-img');
+        profileImg.src = "Logo text white.png";
         
         // Animation for timeline items when they come into view
         document.addEventListener('DOMContentLoaded', function() {
