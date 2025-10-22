@@ -148,134 +148,27 @@
                 <button class="tab-btn" data-tab="graphics">Graphics Design</button>
             </div>
             
-            <div class="tab-content">
-                <!-- Web Development Projects -->
-                <div class="tab-panel active" id="web-dev">
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">E-Commerce Website</h3>
-                                <p class="project-description">Full-stack e-commerce platform with React, Node.js, and MongoDB</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                </div>
+                <div class="tab-content">
+                    <!-- Web Development Projects -->
+                    <div class="tab-panel active" id="web-dev">
+                        <div class="circular-carousel-container">
+                            <div class="circular-carousel" id="web-dev-carousel">
+                                <div class="carousel-center"></div>
+                                <!-- Cards will be positioned by JavaScript -->
                             </div>
                         </div>
-                        
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Task Management App</h3>
-                                <p class="project-description">Collaborative task management application with real-time updates</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Vue.js</span>
-                                    <span class="tech-tag">Express</span>
-                                    <span class="tech-tag">Socket.io</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Portfolio Website</h3>
-                                <p class="project-description">Responsive portfolio website with modern animations</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">HTML5</span>
-                                    <span class="tech-tag">CSS3</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                </div>
+                    </div>
+                    
+                    <!-- Graphics Design Projects -->
+                    <div class="tab-panel" id="graphics">
+                        <div class="circular-carousel-container">
+                            <div class="circular-carousel" id="graphics-carousel">
+                                <div class="carousel-center"></div>
+                                <!-- Cards will be positioned by JavaScript -->
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Graphics Design Projects -->
-                <div class="tab-panel" id="graphics">
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Brand Identity Design</h3>
-                                <p class="project-description">Complete brand identity package including logo, business cards, and letterhead</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Adobe Illustrator</span>
-                                    <span class="tech-tag">Photoshop</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">UI/UX Design</h3>
-                                <p class="project-description">Mobile app interface design with user experience focus</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Figma</span>
-                                    <span class="tech-tag">Adobe XD</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Poster Design</h3>
-                                <p class="project-description">Event poster design with creative typography and layout</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Photoshop</span>
-                                    <span class="tech-tag">Illustrator</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         
         <!-- Footer Section -->
@@ -549,9 +442,178 @@
                     const targetPanel = document.getElementById(targetTab);
                     if (targetPanel) {
                         targetPanel.classList.add('active');
+                        // Reset carousel when switching tabs
+                        resetCarousel(targetTab);
                     }
                 });
             });
+        }
+        
+        // Project data
+        const webDevProjects = [
+            {
+                title: "E-Commerce Website",
+                description: "Full-stack e-commerce platform with React, Node.js, and MongoDB",
+                tech: ["React", "Node.js", "MongoDB"],
+                backDescription: "Modern shopping experience with secure payments and real-time inventory"
+            },
+            {
+                title: "Task Management App",
+                description: "Collaborative task management application with real-time updates",
+                tech: ["Vue.js", "Express", "Socket.io"],
+                backDescription: "Team collaboration with real-time notifications and project tracking"
+            },
+            {
+                title: "Portfolio Website",
+                description: "Responsive portfolio website with modern animations",
+                tech: ["HTML5", "CSS3", "JavaScript"],
+                backDescription: "Creative showcase with smooth animations and responsive design"
+            },
+            {
+                title: "Blood Bank Management System",
+                description: "Comprehensive blood bank management system with donor tracking",
+                tech: ["PHP", "MySQL", "Bootstrap"],
+                backDescription: "Complete blood bank solution with donor management and inventory tracking"
+            },
+            {
+                title: "TripNest Travel Site",
+                description: "Modern travel booking platform with destination management",
+                tech: ["React", "Node.js", "MongoDB"],
+                backDescription: "Travel booking platform with hotel reservations and trip planning features"
+            },
+            {
+                title: "SastoDeal Car Dealer",
+                description: "Car dealership platform with vehicle inventory management",
+                tech: ["Vue.js", "Express", "PostgreSQL"],
+                backDescription: "Complete car dealership solution with inventory and customer management"
+            }
+        ];
+
+        const graphicsProjects = [
+            {
+                title: "Azure Visit Design",
+                description: "Professional event poster design for Azure visit",
+                tech: ["Photoshop", "Illustrator"],
+                backDescription: "Professional event poster with modern design elements",
+                image: "Graphics/azure visit.png"
+            },
+            {
+                title: "Benz Coupe Design",
+                description: "Luxury car advertisement design with premium aesthetics",
+                tech: ["Photoshop", "Illustrator"],
+                backDescription: "Luxury automotive design with premium visual elements",
+                image: "Graphics/Benz coupe.png"
+            },
+            {
+                title: "Environment Day Design",
+                description: "Environmental awareness poster with eco-friendly design",
+                tech: ["Photoshop", "Illustrator"],
+                backDescription: "Environmental awareness design promoting sustainability",
+                image: "Graphics/environment day.png"
+            },
+            {
+                title: "Flutter App Design",
+                description: "Mobile app interface design for Flutter application",
+                tech: ["Figma", "Adobe XD"],
+                backDescription: "Modern mobile app interface with clean and intuitive design",
+                image: "Graphics/Flutter.png"
+            },
+            {
+                title: "PTEL Bus Design",
+                description: "Transportation advertisement design for PTEL bus service",
+                tech: ["Photoshop", "Illustrator"],
+                backDescription: "Transportation service design with modern branding elements",
+                image: "Graphics/Ptel bus.png"
+            }
+        ];
+
+        // Create project cards
+        function createProjectCards(projects, containerId, isWebDev = true) {
+            const container = document.getElementById(containerId);
+            
+            projects.forEach((project, index) => {
+                const card = document.createElement('div');
+                card.className = 'project-card';
+                card.setAttribute('data-index', index);
+                
+                // Create image HTML for graphics projects
+                const imageHtml = project.image ? 
+                    `<img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">` : 
+                    '';
+                
+                card.innerHTML = `
+                    <div class="card-front">
+                        <div class="project-image">
+                            ${imageHtml}
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="${isWebDev ? 'fab fa-github' : 'fab fa-behance'}"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">${project.title}</h3>
+                            <p class="project-description">${project.description}</p>
+                            <div class="project-tech">
+                                ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>${project.title}</h3>
+                            <p>${project.backDescription}</p>
+                            <div class="back-tech">
+                                ${project.tech.map(tech => `<span>${tech}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        // Position cards in a circular layout
+        function positionCards(carouselId, radius = 300) {
+            const carousel = document.getElementById(carouselId);
+            const cards = carousel.querySelectorAll('.project-card');
+            const totalCards = cards.length;
+            
+            cards.forEach((card, index) => {
+                const angle = (index * 360) / totalCards;
+                const radians = (angle * Math.PI) / 180;
+                
+                // Calculate position in 3D space for horizontal circle
+                const x = Math.cos(radians) * radius;
+                const z = Math.sin(radians) * radius;
+                
+                // Apply 3D positioning and rotation - keep cards facing front
+                card.style.transform = `translate3d(${x}px, 0, ${z}px) rotateY(0deg)`;
+                
+                // Set full opacity for all cards
+                card.style.opacity = 1;
+            });
+        }
+
+        // Futuristic Horizontal Circular Carousel functionality
+        function initCarousels() {
+            // Create project cards
+            createProjectCards(webDevProjects, 'web-dev-carousel', true);
+            createProjectCards(graphicsProjects, 'graphics-carousel', false);
+            
+            // Position cards in circular layout
+            positionCards('web-dev-carousel', 300);
+            positionCards('graphics-carousel', 300);
+        }
+        
+        // Reset carousel when switching tabs
+        function resetCarousel(tabId) {
+            const resetFunction = window[`resetCarousel_${tabId}`];
+            if (resetFunction) {
+                resetFunction();
+            }
         }
         
         // Initialize all effects
@@ -566,6 +628,9 @@
             createCodeRain();
             initBinaryCounters();
             initProjectTabs();
+            initCarousels();
+            
+            // Cards will remain in front view - no flip effect
         });
         
         // Set initial image
