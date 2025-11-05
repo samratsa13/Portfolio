@@ -1345,6 +1345,18 @@
             .footer-content {
                 grid-template-columns: 1fr;
             }
+            .btn-primary span {
+        display: none;
+    }
+    
+    .btn-primary i {
+        margin-right: 0;
+    }
+    
+    .btn-primary {
+        padding: 8px 12px;
+        min-width: auto;
+    }
         }
 
         @media (max-width: 480px) {
@@ -1369,5 +1381,18 @@
             .section-title {
                 font-size: 2rem;
             }
+    .nav-actions .btn-primary {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    
+    /* Ensure proper spacing in nav */
+    .nav-actions {
+        gap: 0.5rem;
+    }
+    
+    .logo span {
+        font-size: 1.1rem;
+    }
         }
     
